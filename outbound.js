@@ -28,6 +28,7 @@ var host = require('os').hostname().replace(/\\/, '\\057').replace(/:/, '\\072')
 var fn_re = /^(\d+)_(\d+)_/; // I like how this looks like a person
 
 var queue_dir = path.resolve(config.get('queue_dir') || (process.env.HARAKA + '/queue'));
+console.log(queue_dir);
 var uniq = Math.round(Math.random() * MAX_UNIQ);
 var cfg;
 exports.load_config = function () {

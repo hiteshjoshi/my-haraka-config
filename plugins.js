@@ -238,7 +238,7 @@ plugins.run_hooks = function (hook, object, params) {
         object.saved_hooks_to_run = object.hooks_to_run;
     }
     object.hooks_to_run = [];
-
+	if(plugins.plugin_list && plugins.plugin_list.length>0)
     for (var i = 0; i < plugins.plugin_list.length; i++) {
         var plugin = plugins.plugin_list[i];
 

@@ -22,9 +22,9 @@ dnsbl
 # see config/helo.checks.ini for configuration
 helo.checks
 # see 'haraka -h tls' for config instructions before enabling!
-# tls
+tls
 # auth: auth_base   auth_ldap   auth_proxy  flat_file
-
+auth/flat_file
 # MAIL FROM
 # Only accept mail where the MAIL FROM domain is resolvable to an MX record
 mail_from.is_resolvable
